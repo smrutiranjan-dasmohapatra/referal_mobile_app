@@ -91,18 +91,27 @@ class _HomepageState extends State<HomePage> {
                         SizedBox(height: 5),
                         Text('Account Balance'),
                         SizedBox(height: 4),
-                        Icon(
-                          Icons.currency_rupee_sharp,
-                          color: const Color.fromARGB(255, 47, 90, 218),
-                          size: 30,
-                        ),
-                        SizedBox(width: 4),
-                        Text(
-                          '70.00',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 18,
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.currency_rupee_sharp,
+                                  color: const Color.fromARGB(255, 47, 90, 218),
+                                  size: 30,
+                                ),
+                                SizedBox(width: 2),
+                                Text(
+                                  '70.00',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ],
                     ),
